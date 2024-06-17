@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automação Insdustrial</title>
+    <link rel="stylesheet" href="../Style/style.css">
+</head>
+<body>
+    <header>
+        <article class="topicos">
+            <ul>
+                <a class="botaointeracao" onclick="atentrar()">
+                    <span class="text-1">Automação Industrial</span>
+                </a>
+                <a class="botaointeracao" onclick="dentrar()">
+                    <span class="text-1">Desenvolvimento Web</span>
+                </a>
+                <a class="botaointeracao" onclick="bentrar()">
+                    <span class="text-1">Banco de Dados</span>
+                </a>
+                <a class="botaointeracao" onclick="lentrar()">
+                    <span class="text-1"><p class="lp">Linguagem de</p> Programação</span>
+                </a>
+                <a class="botaointeracao" onclick="centrar()">
+                    <span class="text-1">Ciência de Dados</span>
+                </a>
+            </ul>
+        </article>
+    </header>
+    <main>
+        <div class="bloco1">
+            <h1>Banco de Dados</h1>
+            <h3>Dados vs Modelagem de Dados</h3>
+            <p>O que é Modelagem de Dados? Modelagem de dados é o processo de criar uma estrutura ou esquema que define como os dados serão armazenados, organizados e inter-relacionados dentro de um banco de dados</p>
+            <p>Modelagem Conceitual: Define o que deve estar no banco de dados, usando diagramas de alto nível como Diagramas de Entidade-Relacionamento (ERD). Não se preocupa com detalhes técnicos, mas com a estrutura lógica dos dados</p>
+            <p>Modelagem Lógica: Detalha a modelagem conceitual com mais precisão, incluindo atributos e tipos de dados, mas ainda independente de um sistema de gerenciamento de banco de dados específico.</p>
+            <p>Modelagem Física: Traduz o modelo lógico em um esquema que pode ser implementado em um banco de dados específico, incluindo detalhes como índices, chaves primárias e estrangeiras, e tipos de armazenamento</p>
+            <p>Exemplos para clarificar</p>
+            <p>Dados</p>
+            <p>Imagine que você tem uma lista de alunos em uma escola:</p>
+            <p>•	Nome: João Silva</p>
+            <p>•	Idade: 15</p>
+            <p>•	Turma: 10º ano</p>
+            <p>Esses são dados brutos que podem ser armazenados em uma tabela.</p>
+            <h3>Modelagem de Dados</h3>
+            <p>Para organizar esses dados, você precisa criar um modelo que define como eles se relacionam</p>
+            <h3>Modelagem Conceitual	</h3>
+            <p>Um Diagrama de Entidade-Relacionamento (ERD) pode mostrar que você tem duas entidades principais: Aluno e Turma.</p>
+            <p>•	Aluno: Nome, Idade, Matrícula</p>
+            <p>•	Turma: Código da Turma, Nome da Turma</p>
+            <p>E um relacionamento: Um aluno pertence a uma turma</p>            
+            <h3>Modelagem Lógica</h3>
+            <p>Define os atributos e os relacionamentos mais detalhadamente</p>
+            <img src="../Image/modelagem logica.png" alt="modelagem logica">
+            <h3>Modelagem Física</h3>
+            <p>Transforma o modelo lógico em comandos SQL</p>
+            <img src="../Image/modelagem fisica.png" alt="">
+            <h3>Banco de Dados Relacionais</h3>
+            <p>Um Banco de Dados Relacional (ou SGBDR - Sistema de Gerenciamento de Banco de Dados Relacional) é um tipo de banco de dados que organiza os dados em tabelas relacionadas</p>
+            <p>Vantagens e Desvantagens</p>
+            <p>Vantagens</p>
+            <p>•	Estrutura Organizada: Facilidade na organização e estruturação dos dados.</p>
+            <p>•	Integridade Referencial: Garantia de consistência e integridade dos dados.</p>
+            <p>•	Flexibilidade: Suporte a consultas complexas e análises de dados.</p>
+            <p>Desvantagens</p>
+            <p>•	Escalabilidade: Em grandes volumes de dados, pode ser necessário otimizar para melhor performance.</p>
+            <p>•	Esquema Rígido: Alterações no esquema podem ser complexas em algumas situações.</p>
+            <p>•	Custo: Alguns sistemas de banco de dados relacionais podem ser caros em comparação com alternativas NoSQL.</p>
+            <h3>Comandos DDL - Data Definition Language</h3>
+            <p>CREATE TABLE: Cria uma nova tabela</p>
+            <img src="../Image/create table.png" alt="create table">
+            <p>CREATE INDEX: Cria um índice para acelerar a recuperação de dados em tabelas grandes</p>
+            <img src="../Image/create index.png" alt="create index">
+            <p>ALTER</p>
+            <p>O comando ALTER é usado para modificar a estrutura de objetos existentes no banco de dados.</p>
+            <p>ALTER TABLE: Adiciona, modifica ou remove colunas de uma tabela</p>
+            <p>DROP</p>
+            <p>DROP TABLE: Remove uma tabela e todos os seus dados</p>
+            <h3>Comandos DML - Data Manipulation Language</h3>
+            <p>O comando INSERT é usado para inserir novos registros em uma tabela.</p>
+            <img src="../Image/insert.png" alt="insert">
+            <p>Inserir múltiplos registros:</p>
+            <img src="../Image/insert mult.png" alt="insert">
+            <p>UPDATE</p>
+            <p>O comando UPDATE é usado para atualizar registros existentes em uma tabela.</p>
+            <img src="../Image/update.png" alt="update">
+            <p>DELETE</p>
+            <img src="../Image/delete.png" alt="delete">
+            <p>Excluir todos os registros da tabela:</p>
+            <img src="../Image/delete mult.png" alt="delete">
+            <p>SELECT</p>
+            <p>o SELECT é fundamental para recuperar dados de uma tabela e é frequentemente utilizado em conjunto com os comandos DML</p>
+            <img src="../Image/select.png" alt="select">
+            <h3>Comandos DQL - Data Query Language</h3>
+            <p>SELECT</p>
+            <img src="../Image/select2.png" alt="select">
+            <p>DISTINCT</p>
+            <img src="../Image/distinct.png" alt="distinct">
+            <p>ORDER BY</p>
+            <p>O comando ORDER BY é usado para ordenar os resultados de uma consulta.</p>
+            <img src="../Image/order by.png" alt="order by">
+            <h3>Dataset do Titanic</h3>
+            <p>Suponha que temos um dataset simples do Titanic com as seguintes informações:</p>
+            <p>•	PassengerId (ID do passageiro)</p>
+            <p>•	Name (Nome do passageiro)</p>
+            <p>•	Age (Idade do passageiro)</p>
+            <p>•	Sex (Sexo do passageiro)</p>
+            <p>•	Survived (Sobreviveu ou não)</p>
+            <p>Normalização:</p>
+            <p>Primeira Forma Normal (1NF)</p>
+            <p>•	Garantir que cada coluna contenha apenas valores atômicos (indivisíveis).</p>
+            <p>•	Exemplo: Não ter múltiplos valores em uma única célula. Cada atributo deve conter apenas um valor.</p>
+            <p>Segunda Forma Normal (2NF)</p>
+            <p>•	Atender à 1NF e garantir que todos os atributos não chave sejam totalmente dependentes da chave primária.</p>
+            <p>•	Exemplo: Se houver informações de viagem (como Embarked - Porto de Embarque), elas devem estar relacionadas diretamente com a chave primária (PassengerId).</p>
+            <p>Terceira Forma Normal (3NF)</p>
+            <p>•	Atender à 2NF e garantir que não haja dependência transitiva entre os atributos não chave.</p>
+            <p>•	Exemplo: Se houver atributos não chave que dependem de outros não chave, eles devem ser movidos para uma tabela separada</p>
+            <h3>Banco de Dados NoSQL</h3>
+            <p>Bancos de Dados NoSQL (Not Only SQL) são sistemas de gerenciamento de banco de dados que diferem dos tradicionais bancos de dados relacionais (SQL) em sua arquitetura, modelo de dados e abordagem para armazenar e recuperar informações</p>
+            <p>Vantagens e desvantagens do NoSQL</p>
+            <p>Vantagens do NoSQL</p>
+            <p>Escalabilidade Horizontal:</p>
+            <p>Os bancos de dados NoSQL são projetados para escalabilidade horizontal, o que significa que podem lidar facilmente com grandes volumes de dados distribuindo o processamento entre vários servidores.</p>
+            <p>Ideal para lidar com o crescimento exponencial de dados com eficiência</p>
+            <p>Desvantagens do NoSQL</p>
+            <p>Consistência Eventual:</p>
+            <p>Muitos bancos de dados NoSQL oferecem consistência eventual em vez de consistência forte.</p>
+            <p>Isso significa que pode haver atrasos na propagação de dados entre nós, o que pode levar a resultados inconsistentes durante consultas simultâneas.</p>
+            <h3>Atlas MongoDB</h3>
+            <p>MongoDB Atlas é uma plataforma na nuvem que facilita muito a gestão de bancos de dados MongoDB. Imagine que você não precisa se preocupar em configurar servidores ou garantir que tudo esteja funcionando corretamente. O Atlas cuida disso para você. Ele permite escalar automaticamente seus bancos de dados conforme necessário, ou seja, aumentar ou diminuir o tamanho deles de acordo com a demanda do seu aplicativo, sem que você precise fazer isso manualmente.</p>
+            <p>Além disso, o Atlas se preocupa muito com a segurança dos seus dados. Ele usa criptografia para proteger suas informações enquanto estão armazenadas e enquanto são transmitidas pela internet. Também garante que seus dados estejam sempre disponíveis, mesmo se houver falhas em algum dos servidores onde eles estão armazenados.</p>
+            <p>Para quem desenvolve aplicativos, o MongoDB Atlas é uma mão na roda porque permite focar no desenvolvimento do aplicativo em si, sem ter que se preocupar tanto com a parte técnica de gerenciamento de banco de dados. Isso não só economiza tempo, mas também ajuda a manter os dados seguros e acessíveis globalmente, o que é ótimo para empresas que têm usuários ao redor do mundo.</p>
+
+
+    </div>
+    </main>
+    <script src="scriptm.js"></script>
+</body>
+</html>

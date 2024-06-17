@@ -1,0 +1,229 @@
+/* Define margem, padding e box-sizing para todos os elementos */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Define uma variável de gradiente usando propriedades personalizadas */
+:root{
+    --gradient: linear-gradient(
+        to right,
+        rgb(149 144 252 / 1),
+        rgb(67 231 173 / 1),
+        rgb(226 212 92 / 1)
+    )
+}
+
+/* Define o fundo e a cor do texto para o body */
+body{
+    background-attachment: fixed;
+    background-image: linear-gradient(
+        45deg,
+        black 80%, 
+        #400192
+        );
+    color: white;
+}
+
+/* Define estilos para os elementos section */
+section{
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 75px;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Aplica gradiente no fundo do texto em .titulo e o torna transparente */
+.titulo{
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Aplica gradiente no fundo do texto em .nome e o torna transparente */
+.nome{
+    font-size: 25px;
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Define dimensões para .ilustracao */
+.ilustracao{
+    width: 300px;
+    height: 200px;
+}
+
+/* Usa flexbox para layout em .divisao */
+.divisao{
+    display: flex;
+}
+
+/* Define dimensões para os elementos nav */
+nav{
+    height: 100%;
+    width: 240px;
+}
+
+/* Define estilos para .bloco1, incluindo display, padding e margens */
+.bloco1{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    padding: 30px;
+    margin: 20px;
+}
+
+/* Centraliza imagens dentro de .bloco1 */
+.bloco1 img{
+    text-align: center;
+}
+
+/* Define tamanho da fonte para elementos h3 dentro de .bloco1 */
+.bloco1 h3{
+    font-size: 30px;
+}
+
+/* Adiciona estilos para elementos h1 dentro de .bloco1 */
+.bloco1 h1{
+    margin-bottom: 50px;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 50px;
+}
+
+/* Define estilos para .topicos */
+.topicos{
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+    height: 170px;
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+/* Adiciona margem inferior em #materias */
+#materias{
+    margin-bottom: 50px;
+}
+
+/* Define margem e display para itens de lista */
+li{
+    margin: 5px 0px 5px 0px;
+    display: inline;
+    margin: 50px;
+}
+
+/* Define estilos para links com a classe .acesso */
+.acesso{
+    text-decoration: none;
+    color: white;
+}
+
+/* Altera estilos de links ao passar o mouse */
+.acesso:hover{
+    text-decoration: underline;
+}
+
+/* Define tamanho da fonte para .titulos */
+.titulos{
+    font-size: 40px;
+}
+
+/* Usa flexbox para layout em #sobremim, incluindo alinhamento de texto e margens */
+#sobremim{
+    display: flex;
+    text-align: center;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 300px;
+    font-size: 20px;
+}
+
+/* Define dimensões e bordas para #perfil */
+#perfil{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 5px solid rgb(254, 254, 254);
+}
+
+/* Adiciona margem inferior em #tituloSo */
+#tituloSo{
+    margin-bottom: 20px;
+}
+
+/* Adiciona margem em .perfil */
+.perfil{
+    margin-right: 170px;
+}
+
+/* Define estilos para .botaointeracao */
+.botaointeracao {
+    width: 300px;
+    height: 100px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+    border-radius: 9999px;
+    background-color: rgb(65, 96, 250);
+    padding: 0.625rem 1.5rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    outline: 0;
+    transition: all  .2s ease;
+    text-decoration: none;
+}
+  
+/* Define dimensões para .icon */
+.icon {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+  
+/* Define layout para .texts */
+.texts {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1;
+}
+  
+/* Define estilos para .text-1 */
+.text-1 {
+    margin-bottom: 0.25rem;
+    font-size: 25px;
+    line-height: 1rem;
+    gap: 500px;
+}
+
+/* Define dimensões e margem para .social */
+.social{
+    width: 150px;
+    height: 50px;
+    margin-top: 50px;
+}
+
+/* Adiciona margem inferior em .lp */
+.lp{
+    margin-bottom: 10px;
+}
+
+/* Usa flexbox para layout em listas não ordenadas */
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}

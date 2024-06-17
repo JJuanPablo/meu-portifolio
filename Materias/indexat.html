@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automação Insdustrial</title>
+    <link rel="stylesheet" href="../Style/style.css">
+</head>
+<body>
+    <header>
+        <article class="topicos">
+            <ul>
+                <a class="botaointeracao" onclick="atentrar()">
+                    <span class="text-1">Automação Industrial</span>
+                </a>
+                <a class="botaointeracao" onclick="dentrar()">
+                    <span class="text-1">Desenvolvimento Web</span>
+                </a>
+                <a class="botaointeracao" onclick="bentrar()">
+                    <span class="text-1">Banco de Dados</span>
+                </a>
+                <a class="botaointeracao" onclick="lentrar()">
+                    <span class="text-1"><p class="lp">Linguagem de</p> Programação</span>
+                </a>
+                <a class="botaointeracao" onclick="centrar()">
+                    <span class="text-1">Ciência de Dados</span>
+                </a>
+            </ul>
+        </article>
+    </header>
+    <main>
+        <div class="bloco1">
+            <h1>Automação Industrial</h1>
+            <h3>Calculo de Resistencia dos Resistores</h3>
+            <p>Resistores: Os resistores são componentes eletrônicos que têm a função de limitar a corrente elétrica em um circuito. A unidade de medida da resistência é o Ohm (Ω).</p>
+            <p>Como Calcular a Resistência de um Resistor:</p>
+            <p>A resistência de um resistor pode ser calculada usando a Lei de Ohm:</p>
+            <p>R=IV</p>
+            <p>RRR é a resistência em Ohms (Ω),</p>
+            <p>VVV é a tensão aplicada ao resistor em Volts (V),</p>
+            <p>III é a corrente que passa pelo resistor em Ampères (A).</p>
+            <h3>Sketch – Blink e sua estrutura</h3>
+            <p>"Sketch" no contexto do Arduino refere-se ao código-fonte escrito para controlar o microcontrolador Arduino. O Sketch mais básico e comumente usados para aprender e testar a funcionalidade do Arduino é o "Blink", que faz com que um LED conectado ao Arduino pisque em um intervalo regular.</p>
+            <img src="../Image/sketch.png" alt="sketch">
+            <h3>Funcionamento</h3>
+            <p>Quando o Arduino é ligado, a função setup() é executada uma vez para configurar o pino do LED como saída. Em seguida, a função loop() é executada continuamente: Liga o LED por 1 segundo. Desliga o LED por 1 segundo.</p>
+            <p>Este ciclo de ligar e desligar se repete indefinidamente enquanto o Arduino estiver ligado.</p>
+            <h3>Variavei Locais</h3>
+            <p>As variáveis locais são declaradas dentro de funções ou blocos específicos e têm um escopo limitado dentro desses blocos. Elas são usadas principalmente para armazenar valores temporários ou intermediários durante a execução do código. </p>
+            <img src="../Image/variaveis locais.png" alt="variaveis locais">
+            <p>•    valorSensor é uma variável local declarada dentro da função setup().</p>
+            <p>•	Ela só é acessível dentro do próprio setup() e não pode ser usada dentro da função loop() ou em qualquer outro lugar fora de setup().</p>
+            <h3>Variaveis Locais</h3>
+            <p>Variáveis globais são declaradas fora de qualquer função e têm um escopo que abrange todo o programa. No Tinkercad, elas são frequentemente usadas para armazenar dados que precisam ser acessados e modificados por várias partes do código.</p>
+            <img src="../Image/variavel global.png" alt="variavel global">
+            <h3>Constantes</h3>
+            <p>Constantes são valores que não mudam durante a execução do programa e são úteis para definir valores que não devem ser alterados acidentalmente. No Tinkercad, as constantes são frequentemente usadas para representar valores fixos como pinos de sensores ou atuadores.</p>
+            <img src="../Image/constantes.png" alt="constantes">
+            <h3>pinMode()</h3>
+            <p>•	Função: Configura o modo de um pino digital como entrada ou saída.</p>
+            <p>•	pinMode(pin, mode);</p>
+            <p>•	pin: Número do pino digital.</p>
+            <p>•	mode: INPUT para entrada ou OUTPUT para saída.</p>
+            <h3>digitalRead()</h3>
+            <p>•	Função: Lê o estado de um pino digital (HIGH ou LOW).</p>
+            <p>•	digitalRead(pin);</p>
+            <p>•	pin: Número do pino digital a ser lido.</p>
+            <img src="../Image/digital read.png" alt="digital read">
+            <h3>digitalWrite()</h3>
+            <p>•	Função: Define o estado de um pino digital como HIGH ou LOW.</p>
+            <p>•	digitalWrite(pin, value);</p>
+            <p>•	pin: Número do pino digital.</p>
+            <p>•	value: HIGH (5V) ou LOW (0V).</p>
+            <img src="../Image/digital wirte.png" alt="digital write">
+            <h3>delay()</h3>
+            <p>•	Função: Pausa a execução do programa por um número específico de milissegundos.</p>
+            <p>•	delay(milliseconds);</p>
+            <p>•	milliseconds: Tempo de pausa em milissegundos (1 segundo = 1000 milissegundos).</p>
+            <img src="../Image/delay.png" alt="delay">
+            <h3>delayMicroseconds()</h3>
+            <p>•	Função: Pausa a execução do programa por um número específico de microssegundos.</p>
+            <p>•	delayMicroseconds(microseconds);</p>
+            <p>•	microseconds: Tempo de pausa em microssegundos (1 segundo = 1.000.000 microssegundos).</p>
+            <img src="../Image/Captura de tela 2024-06-15 174618.png" alt="delayMicroseconds">
+            <h3>millis()</h3>
+            <p>•	Função: Retorna o número de milissegundos desde o início do programa.</p>
+            <p>•	unsigned long millis();</p>
+            <img src="../Image/millis.png" alt="millis">
+            <h3>analogRead()</h3>
+            <p>•	Função: Lê o valor analógico (0-1023) de um pino analógico.</p>
+            <p>•	int analogRead(pin);</p>
+            <p>•	pin: Número do pino analógico.</p>
+            <img src="../Image/analogread.png" alt="analogRead">
+            <h3>analogWrite()</h3>
+            <p>•	Função: Escreve um valor analógico (PWM) em um pino PWM.</p>
+            <p>•	analogWrite(pin, value);</p>
+            <p>•	pin: Número do pino PWM.</p>
+            <p>•	value: Valor analógico a ser escrito (0-255).</p>
+            <img src="../Image/analogwirite.png" alt="analogWrite">
+            <h3>Funções (Function)</h3>
+            <p>No contexto do Arduino, funções são código que realizam tarefas e podem ser chamadas de outros locais do programa.</p>
+            <img src="../Image/funcoes.png" alt="funções">
+            <p>•	tipo_retorno: Tipo de dado retornado pela função (void se não retornar nenhum valor).</p>
+            <p>•	nome_funcao: Nome da função.</p>
+            <p>•	parametros: Parâmetros passados para a função (opcionais).</p>
+            <img src="../Image/funcoesconti.png" alt="funções">
+
+            <a href="https://github.com/JJuanPablo/AutomPedestre/blob/main/Automação%20Semaforo%20com%20Pedestre.txt">Entrega da Atividade Semáforo</a>
+            <a href="https://github.com/JJuanPablo/Automa-o-Exercicios/blob/main/exercicio%201%20c%2B%2B">Entrega Exercício 1</a>
+            <a href=" https://github.com/JJuanPablo/Exercicios-Arduino-Gabriel/blob/main/README.md">Entrega Exercício 1:</a>
+    </div>
+    </main>
+    <script src="scriptm.js"></script>
+</body>
+</html>

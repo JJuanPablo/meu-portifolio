@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automação Insdustrial</title>
+    <link rel="stylesheet" href="../Style/style.css">
+</head>
+<body>
+    <header>
+        <article class="topicos">
+            <ul>
+                <a class="botaointeracao" onclick="atentrar()">
+                    <span class="text-1">Automação Industrial</span>
+                </a>
+                <a class="botaointeracao" onclick="dentrar()">
+                    <span class="text-1">Desenvolvimento Web</span>
+                </a>
+                <a class="botaointeracao" onclick="bentrar()">
+                    <span class="text-1">Banco de Dados</span>
+                </a>
+                <a class="botaointeracao" onclick="lentrar()">
+                    <span class="text-1"><p class="lp">Linguagem de</p> Programação</span>
+                </a>
+                <a class="botaointeracao" onclick="centrar()">
+                    <span class="text-1">Ciência de Dados</span>
+                </a>
+            </ul>
+        </article>
+    </header>
+    <main>
+        <div class="bloco1">
+            <h1>Ciência de Dados</h1>
+            <h3>Princípios da Matemática Descritiva em Ciência de Dados:</h3>
+            <p>Média: É a soma de todos os valores dividida pelo número de observações. É útil para representar um valor típico no conjunto de dados.</p>
+            <p>Mediana: É o valor que separa a metade superior da metade inferior de uma distribuição de dados ordenados. É menos sensível a valores extremos do que a média.</p>
+            <p>Moda: É o valor que ocorre com mais frequência em um conjunto de dados. Pode ser útil para identificar padrões de ocorrência.</p>
+            <p>Média Aritmética Ponderada</p>
+            <p>A média aritmética ponderada é uma média que leva em consideração diferentes pesos atribuídos a cada valor. É calculada multiplicando cada valor pelo seu peso correspondente, somando todos os produtos e dividindo pela soma dos pesos.</p>
+            <p>Percentil</p>
+            <p>O percentil é um valor que indica a porcentagem de dados que está abaixo de um determinado valor em uma distribuição de dados ordenados. Por exemplo, o percentil 75 indica que 75% dos dados estão abaixo desse valor.</p>
+            <p>Demonstração: Se o seu filho está no percentil 80 em altura para a idade, isso significa que ele é mais alto do que 80% das crianças da mesma idade.</p>
+            <p>Quartil</p>
+            <p>Os quartis dividem uma distribuição de dados ordenados em quatro partes iguais. Existem três quartis: Q1, Q2 (mediana) e Q3.</p>
+            <p>Q1 (Primeiro Quartil): Divide os dados em 25% inferiores.</p>
+            <p>Q2 (Segundo Quartil): É a mediana, divide os dados em duas metades.</p>
+            <p>Q3 (Terceiro Quartil): Divide os dados em 75% inferiores.</p>
+            <p>Demonstração: Se você está analisando os salários de uma empresa, Q1 representa o salário abaixo do qual 25% dos funcionários ganham, Q2 é o salário mediano e Q3 é o salário abaixo do qual 75% dos funcionários ganham</p>
+            <h3>Medidas de Dispersão</h3>
+            <p>Variância: Mede a dispersão dos dados em torno da média. Valores mais altos indicam maior dispersão.</p>
+            <p>Desvio Padrão: É a raiz quadrada da variância e fornece uma medida de dispersão mais interpretável na mesma unidade dos dados.</p>
+            <p>Estatística Descritiva</p>
+            <p>Organiza os dados em intervalos ou categorias e mostra quantas vezes cada valor ocorre. Isso ajuda a entender a frequência e a distribuição dos dados</p>            
+            <h3>Amostragem Aleatória Simples</h3>
+            <p>Na amostragem aleatória simples, cada elemento da população tem a mesma probabilidade de ser selecionado para a amostra. É como se fosse um sorteio onde todos os elementos têm uma chance igual de serem escolhidos.</p>
+            <p>Processo: Enumerar todos os elementos da população. Selecionar aleatoriamente um número fixo de elementos (tamanho da amostra) sem considerar a estrutura ou categorias específicas da população.</p>
+            <h3>Amostragem Sistemática</h3>
+            <p>Na amostragem sistemática, os elementos são selecionados a intervalos regulares a partir de um ponto inicial aleatório. É útil quando a população está organizada em uma sequência ou ordem conhecida.</p>
+            <p>E temos mais um processo para a amostragem sistemática:</p>
+            <p>•	Determinar o tamanho da amostra desejada (n).</p>
+            <p>•	Calcular o intervalo de seleção, dividindo o tamanho da população (N) pelo tamanho da amostra (n).</p>
+            <p>•	Escolher um número aleatório entre 1 e o intervalo como ponto de partida.</p>
+            <p>•	Selecionar cada k-ésimo elemento subsequente até completar a amostra.</p>
+            <p>Para entender melhor:</p>
+            <p> Para estudar o desempenho de alunos em uma escola com 1000 alunos, se a amostra desejada for de 100 alunos, pode-se escolher aleatoriamente um número entre 1 e 10 como ponto de partida e selecionar a cada 10 alunos subsequentes</p>
+            <h3>Amostragem Estratificada</h3>
+            <p>Na amostragem estratificada, a população é dividida em grupos homogêneos (tipo um estrato) e, em seguida, uma amostra aleatória simples é selecionada de cada estrato. Este método garante que cada estrato seja representado proporcionalmente na amostra final.</p>
+            <p>Último, mas não menos importante, mais um processo para amostra estratificada: </p>
+            <p>•	Identificar diferentes estratos na população com base em características relevantes (por exemplo, idade, gênero, região).</p>
+            <p>•	Selecionar aleatoriamente uma amostra de cada estrato usando amostragem aleatória simples.</p>
+            <p>•	Combinar as amostras de todos os estratos para formar a amostra final.</p>
+            <h3>Escalas de medição</h3>
+            <p>Imagine que você está tentando entender como as pessoas se sentem em relação a um novo produto que foi lançado. Para fazer isso, você precisa medir as opiniões das pessoas de alguma forma. As escalas de medição são como réguas ou formas de categorizar essas opiniões ou respostas das pessoas de uma maneira organizada e significativa.</p>
+            <p>Escala Nominal: É como colocar rótulos em diferentes grupos. Por exemplo, se você está perguntando às pessoas qual é a sua cor favorita entre azul, vermelho e verde. Cada cor é um grupo diferente e as pessoas escolhem em qual grupo se encaixam.</p>
+            <p>Escala Nominal: É como colocar rótulos em diferentes grupos. Por exemplo, se você está perguntando às pessoas qual é a sua cor favorita entre azul, vermelho e verde. Cada cor é um grupo diferente e as pessoas escolhem em qual grupo se encaixam.</p>
+            <p>Escala Intervalar: Imagine uma escala de temperatura. Aqui, a diferença entre os números é significativa e faz sentido matematicamente. Por exemplo, se está 20°C hoje e 25°C amanhã, você pode dizer que está mais quente em 5 graus.</p>
+            <p>Escala de Razão: Esta é como a escala intervalar, mas com um ponto zero significativo. Isso significa que você pode dizer quantas vezes maior ou menor uma coisa é em relação a outra. Por exemplo, se uma pessoa ganha $50.000 por ano e outra ganha $100.000, você pode dizer que a segunda pessoa ganha o dobro da primeira.</p>
+            <h3>Medidas de dispersão</h3>
+            <p>As medidas de dispersão são utilizadas na estatística para descrever os quão espalhados ou concentrados estão os dados em relação à medida de tendência central, como a média. Elas fornecem informações sobre a variabilidade dos dados e ajudam a entender a amplitude e a distribuição dos valores em um conjunto de dado.</p>
+            <p>Amplitude</p>
+            <p>É a diferença entre o maior e o menor valor em um conjunto de dados.</p>
+            <p>Fórmula: Amplitude = Valor máximo = Valor mínimo.</p>
+            <p>Demonstração: Se em um conjunto de dados os valores variam de 10 a 90, então a amplitude é 90−10=80. </p>
+            <p>Variância</p>
+            <p>Mede o quão distantes os valores estão da média. Valores mais altos indicam maior dispersão dos dados.</p>
+            <p>Desvio Padrão</p>
+            <p>É a raiz quadrada da variância. Fornece uma medida de dispersão que é na mesma unidade dos dados.</p>
+            <img src="../Image/calculo dp.png" alt="calculo desvio padrao">
+            <p>Demonstração: Se a variância dos dados é 100, então o desvio padrão é raiz de 100 = 10.</p>
+            <p>Coeficiente de Variação</p>
+            <p>É o desvio padrão expresso como uma porcentagem da média, sendo útil para comparar a dispersão entre diferentes conjuntos de dados.</p>
+            <img src="../Image/calculo coev.png" alt="calculo coeficiente de variação">
+            <h3>Inferência</h3>
+            <p>Refere-se ao processo de tirar conclusões sobre uma população com base em uma amostra de dados.  Esse processo utiliza métodos estatísticos para fazer previsões, estimar parâmetros e testar hipóteses.</p>
+            <p>População e Amostra:</p>
+            <p>•	População: É o conjunto completo de todos os itens ou indivíduos que você está interessado em estudar. Por exemplo, todos os eleitores de um país.</p>
+            <p>•	Amostra: É um subconjunto da população que é usado para fazer inferências sobre a população inteira. Por exemplo, uma pesquisa de opinião com 1.000 eleitores.</p>
+            <p>Estatísticas Descritivas</p>
+            <p>Antes de realizar inferências, é importante descrever a amostra usando estatísticas descritivas como média, mediana, variância e desvio padrão. Estas medidas ajudam a resumir e entender as características principais da amostra.</p>
+            <p>Estimativas Pontuais e Intervalares</p>
+            <p>Estimativas Pontuais: São valores únicos calculados a partir da amostra, usados para estimar parâmetros da população. Exemplo: a média amostral como uma estimativa da média populacional.</p>
+            <p>Estimativas Intervalares: Fornecem um intervalo de valores dentro do qual o parâmetro populacional é esperado estar, com um certo nível de confiança. Exemplo: intervalo de confiança de 95% para a média populacional.</p>
+            <h3>Funções em Ciência de Dados</h3>
+            <p>Funções:</p>
+            <p>Imagine que você está cozinhando e quer fazer um bolo. Para isso, você segue uma receita, que é um conjunto de instruções sobre como fazer o bolo. As funções em programação são como essas receitas: elas são um conjunto de instruções que você pode usar sempre que precisar, sem ter que escrever tudo de novo.</p>
+            <p>Organização: Funções ajudam a manter seu código organizado. Em vez de ter um monte de instruções misturadas, você pode dividir seu código em partes menores e mais fáceis de entender.</p>
+            <p>Facilidade de Teste: É mais fácil testar e corrigir pequenos pedaços de código (funções) do que um grande bloco de código</p>
+
+            <a href="https://colab.research.google.com/drive/1nq3Q6-C-1LKw6C0DWrK-FyW6ljVVMt4r#scrollTo=WmowlNf3nYKE">Google Colab Juan Pablo</a>
+
+    </div>
+    </main>
+    <script src="scriptm.js"></script>
+</body>
+</html>
